@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pawon Arjuna - Jasa Catering di Limbangan Karanganyar, Pekalongan. Lezat, terpercaya, dan siap melayani berbagai acara.">
-    <title>Pawon Arjuna Catering</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Pawon Arjuna - Jasa Catering di Limbangan Karanganyar, Pekalongan. Lezat, terpercaya, dan siap melayani berbagai acara." name="description"/>
+<title>Pawon Arjuna Catering</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,8 +22,8 @@
             text-align: center;
         }
         header img {
-            max-width: 100px;
-            border-radius: 50%;
+            max-width: 190px;
+            border-radius: 30%;
             margin-bottom: 10px;
         }
         nav {
@@ -34,7 +36,7 @@
             color: white;
             margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: reguler;
         }
         main {
             padding: 30px 20px;
@@ -44,16 +46,17 @@
             color: #d62828;
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
         .item {
+    margin-bottom: 20px;
             background: white;
             padding: 10px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             text-align: center;
         }
         .item img {
@@ -87,90 +90,321 @@
             padding: 20px;
             margin-top: 40px;
         }
+	.item img {
+	    width: 100%;
+	    aspect-ratio: 1 / 1; /* Membuat persegi */
+	    object-fit: cover;   /* Crop gambar agar tetap proporsional */
+	    border-radius: 12px;
+	}
     </style>
-</head>
+<style>
+    .logo-animated {
+        animation: dropLogo 2s ease-out forwards;
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    @keyframes dropLogo {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f77f00;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header a[href*="wa.me"] {
+        background-color: 	#014f43;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+    header a[href*="wa.me"]:hover {
+        background-color: #128C7E;
+    }
+    section {
+        background-color: #f3e9da;
+        margin: 40px 0;
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+    .item {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.6s ease-out;
+    }
+    .item.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script></head>
 <body>
-    <header>
-        <img src="https://i.imgur.com/fTE4aaf.png" alt="Logo Pawon Arjuna">
-        <h1>PAWON ARJUNA <br>Snack & Catering</h1>
-        <h3>Sajian berselera, harga bersahaja</h3>
-        <p></p>
-    </header>
+<header>
+<img alt="Logo Pawon Arjuna" class="logo-animated" src="https://i.imgur.com/fTE4aaf.png"/>
+<h1><p><strong>PAWON ARJUNA</strong></p></h1>
+<p>Sajian Berselera - Harga bersahaja</p>
+<a href="https://wa.me/6285813800375" target="_blank">0858-1380-0375</a>
+</header>
+<nav>
+<div class="nav-row">
+<a href="#kontak">Kontak</a>
+<a href="#Nasi">Nasi</a>
+<a href="#Lauk">Lauk</a>
+</div>
+<div class="nav-row">
+<a href="#Sedepan">Sedepan</a>
+<a href="#Tumpeng">Tumpeng</a>
+<a href="#Prasmanan">Prasmanan</a>
+</div>
+</nav>
+<main>
+<section id="tentang">
+<h2>Tentang Kami</h2>
+<p style="text-align: center;">Pawon Arjuna adalah jasa catering yang berlokasi di Limbangan Karanganyar, Pekalongan. Kami siap melayani berbagai macam acara, seperti pernikahan, syukuran, hajatan, rapat, dan lainnya. Kualitas rasa dan pelayanan adalah prioritas kami.</p>
+</section>
+<section id="Nasi">
+<div class="item">
+<h2 data-aos="fade-up">Paket Nasi</h2>
+<div class="Paket Nasi"></div></div></section>
+<div class="item">
+<img alt="Nasi Kuning" src="https://i.imgur.com/HI24ene.jpeg"/>
+<p data-aos="fade-up">NO. 01<br/><strong data-aos="fade-up">Nasi kuning</strong> <br/>Rp. 10.000</p>
+</div>
+<div class="item">
+<img alt="Nasi Bakar Simple" src="https://i.imgur.com/UuQjkMH.jpeg"/>
+<p data-aos="fade-up">NO. 02<br/><strong data-aos="fade-up">Nasi Bakar Simple</strong> <br/>Rp. 10.000</p>
+</div>
+<div class="item">
+<img alt="Bento nasi bakar&lt;br" src="https://i.imgur.com/VooojQP.jpeg"/>
+<p data-aos="fade-up">NO. 03<br/><strong data-aos="fade-up">Bento nasi bakar</strong> <br/>Rp. 12.000</p>
+</div>
+<div class="item">
+<img alt="Nasi lele" src="https://i.imgur.com/vc6VQ6P.jpeg"/>
+<p data-aos="fade-up">NO. 04<br/><strong data-aos="fade-up">Nasi lele</strong> <br/>Rp. 13.000</p>
+</div>
+<div class="item">
+<img alt="Nasi megono ayam pedas" src="https://i.imgur.com/wYwIpw0.jpeg"/>
+<p data-aos="fade-up">NO. 05<br/><strong data-aos="fade-up">Nasi megono ayam pedas</strong> <br/>Rp. 15.000</p>
+</div>
+<div class="item">
+<img alt="Nasi berkat ayam Taliwang" src="https://i.imgur.com/agL4NJ4.jpeg"/>
+<p data-aos="fade-up">NO. 06<br/><strong data-aos="fade-up">Nasi berkat ayam Taliwang</strong> <br/>Rp. 15.000</p>
+</div>
+<div class="item">
+<img alt="Nasi liwet ikan lele" src="https://i.imgur.com/KoJar7q.jpeg"/>
+<p data-aos="fade-up">NO. 07<br/><strong data-aos="fade-up">Nasi liwet ikan lele</strong> <br/>Rp. 15.000</p>
+</div><div class="item">
+<div class="item">
+<img alt="Bento nasi bakar jumbo" src="https://i.imgur.com/yoGvZbM.jpeg"/>
+<p data-aos="fade-up">NO. 08<br/><strong data-aos="fade-up">Bento nasi bakar jumbo</strong> <br/>Rp. 17.000</p>
+</div>
+<div class="item">
+<img alt="Nasi bento ayam bakar" src="https://i.imgur.com/gV2R1ak.jpeg"/>
+<p data-aos="fade-up">NO. 09<br/><strong data-aos="fade-up">Nasi bento ayam bakar</strong> <br/>Rp. 17.000</p>
+</div>
+<div class="item">
+<img alt="Nasi ikan acar sayur" src="https://i.imgur.com/z6Ig5bG.jpeg"/>
+<p data-aos="fade-up">NO. 10<br/><strong data-aos="fade-up">Nasi ikan acar sayur</strong> <br/>Rp. 17.000</p>
+</div>
+<div class="item">
+<img alt="Bento nasi ayam+sayur" src="https://i.imgur.com/EZMwkYx.jpeg"/>
+<p data-aos="fade-up">NO. 11<br/><strong data-aos="fade-up">Bento nasi ayam+sayur</strong> <br/>Rp. 17.000</p>
+</div>
+<div class="item">
+<img alt="Bento nasi kuning ayam" src="https://i.imgur.com/1pSC4ah.jpeg"/>
+<p data-aos="fade-up">NO. 12<br/><strong data-aos="fade-up">Bento nasi kuning ayam</strong> <br/>Rp. 18.000</p>
+</div>
+<div class="item">
+<img alt="Bento nasi ayam teriyaki+sayur" src="https://i.imgur.com/dqEk1q9.jpeg"/>
+<p data-aos="fade-up">NO. 13<br/><strong data-aos="fade-up">Bento nasi ayam teriyaki+sayur</strong> <br/>Rp. 18.000</p>
+</div>
+<div class="item">
+<img alt="Bento nasi liwet ayam" src="https://i.imgur.com/AKwtjLe.jpeg"/>
+<p data-aos="fade-up">NO. 14<br/><strong data-aos="fade-up">Bento nasi liwet ayam</strong> <br/>Rp. 18.000</p>
+</div>
+<img alt="Nasi ayam betutu" src="https://i.imgur.com/cXO55Ni.jpeg"/>
+<p data-aos="fade-up">NO. 15<br/><strong data-aos="fade-up">Nasi ayam betutu</strong> <br/>Rp. 18.000</p>
+</div>
+<div class="item">
+<img alt="Nasi Berkat ayam temper" src="https://i.imgur.com/6tIfq28.jpeg"/>
+<p data-aos="fade-up">NO. 16<br/><strong data-aos="fade-up">Nasi Berkat ayam tempe</strong> <br/>Rp. 18.000</p>
+</div>
+<div class="item">
+<img alt="Nasi bento nila bakar" src="https://i.imgur.com/eWzS5Sl.jpeg"/>
+<p data-aos="fade-up">NO. 17<br/><strong data-aos="fade-up">Nasi bento nila bakar</strong> <br/>Rp. 18.000</p>
+</div>
+<div class="item">
+<img alt="Nasi bento ayam teriyaki" src="https://i.imgur.com/9JSKu1Q.jpeg"/>
+<p data-aos="fade-up">NO. 18<br/><strong data-aos="fade-up">Nasi bento ayam teriyaki</strong> <br/>Rp. 20.000</p>
+</div>
+<div class="item">
+<img alt="Nasi panggang ayam" src="https://i.imgur.com/Y8Nh7a3.jpeg"/>
+<p data-aos="fade-up">NO. 19<br/><strong data-aos="fade-up">Nasi panggang ayam</strong> <br/>Rp. 20.000</p>
+</div>
+<div class="item">
+<img alt="Nasi liwet ikan nila" src="https://i.imgur.com/C5H5ojP.jpeg"/>
+<p data-aos="fade-up">NO. 20<br/><strong data-aos="fade-up">Nasi liwet ikan nila</strong> <br/>Rp. 20.000</p>
+</div>
+<div class="item">
+<img alt="Nasi berkat ayam telur" src="https://i.imgur.com/PqIYFQ1.jpeg"/>
+<p data-aos="fade-up">NO. 21<br/><strong data-aos="fade-up">Nasi berkat ayam telur</strong> <br/>Rp. 22.000</p>
+</div>
+<div class="item">
+<img alt="Berkat Nasi liwet ayam 1/4r" src="https://i.imgur.com/LPE36ix.jpeg"/>
+<p data-aos="fade-up">NO. 22<br/><strong data-aos="fade-up">Berkat Nasi liwet ayam 1/4</strong> <br/>Rp. 22.000</p>
+</div>
+<div class="item">
+<img alt="Nasi gurame paket" src="https://i.imgur.com/1AdVFUb.jpeg"/>
+<p data-aos="fade-up">NO. 23<br/><strong data-aos="fade-up">Nasi gurame paket</strong> <br/>Rp. 45.000</p>
+</div>
+<div class="item">
+<img alt="Nasi berkat rendang telur" src="https://i.imgur.com/xBq2CZt.jpeg"/>
+<p data-aos="fade-up">NO. 24<br/><strong data-aos="fade-up">Nasi berkat rendang telur</strong> <br/>Rp. 25.000</p>
+</div>
+<section id="Lauk">
+<div class="item">
+<h2 data-aos="fade-up">Lauk pauk</h2>
+<div class="Lauk"></div></div></section>
+<div class="item">
+<img alt="Bihun Goreng" src="https://i.imgur.com/VrCmP5g.jpeg"/>
+<p data-aos="fade-up">NO. 25<br/><strong data-aos="fade-up">Bihun Goreng</strong> <br/>Rp. 10.000</p>
+</div>
+<div class="item">
+<img alt="Nila asam manis" src="https://i.imgur.com/qezhpGI.jpeg"/>
+<p data-aos="fade-up">NO. 26<br/><strong data-aos="fade-up">Nila asam manis</strong> <br/>Rp. 12.000</p>
+</div>
+<div class="item">
+<img alt="Nila bakar tanpa nasi" src="https://i.imgur.com/AJyTqoo.jpeg"/>
+<p data-aos="fade-up">NO. 27<br/><strong data-aos="fade-up">Nila bakar tanpa nasi</strong> <br/>Rp. 15.000</p>
+</div>
+<div class="item">
+<img alt="Capcay goreng" src="https://i.imgur.com/Z1oegBM.jpeg"/>
+<p data-aos="fade-up">NO. 28<br/><strong data-aos="fade-up">Capcay goreng</strong><br/>Rp. 15.000</p>
+</div>
+<div class="item">
+<img alt="Sambel goreng hati" src="https://i.imgur.com/cGU5nrp.jpeg"/>
+<p data-aos="fade-up">NO. 29<br/><strong data-aos="fade-up">Sambel goreng hati </strong> <br/>Rp. 15.000</p>
+</div>
+<div class="item">
+<img alt="Telur balado 8 porsi" src="https://i.imgur.com/Rpp3FUS.jpeg"/>
+<p data-aos="fade-up">No. 30<br/><strong data-aos="fade-up">Telur balado 8 porsi</strong><br/>Rp. 25.000</p>
+</div>
+<div class="item">
+<img alt="Gurame Bakar Single" src="https://i.imgur.com/opCopQf.jpeg"/>
+<p data-aos="fade-up">NO. 31<br/><strong data-aos="fade-up">Gurame Bakar Single</strong> <br/>Rp. 40.000</p>
+</div>
+<div class="item">
+<img alt="Gurame asam manis" src="https://i.imgur.com/lngTFxG.jpeg"/>
+<p data-aos="fade-up">NO. 32<br/><strong data-aos="fade-up">Gurame asam manis</strong> <br/>Rp. 40.000</p>
+</div>
+<div class="item">
+<img alt="Gurame Bakar Duo" src="https://i.imgur.com/4GyIoWb.jpeg"/>
+<p data-aos="fade-up">NO. 33<br/><strong data-aos="fade-up">Gurame Bakar Duo</strong> <br/>Rp. 75.000</p>
+</div>
+<div class="item">
+<img alt="Opor ayam negeri 1/2 ekor" src="https://i.imgur.com/jIIv1ml.jpeg"/>
+<p data-aos="fade-up">NO. 34<br/><strong data-aos="fade-up">Opor ayam negeri 1/2 ekor</strong> <br/>Rp. 45.000</p>
+</div>
+<div class="item">
+<img alt="Ayam jantan utuh bumbu kecap" src="https://i.imgur.com/j1jsvzo.jpeg"/>
+<p data-aos="fade-up">NO. 35<br/><strong data-aos="fade-up">Ayam jantan utuh bumbu kecap</strong> <br/>Rp. 45.000</p>
+</div>
+<div class="item">
+<img alt="Ayam betutu kampung 1/2" src="https://i.imgur.com/RrLafr6.jpeg"/>
+<p data-aos="fade-up">NO. 36<br/><strong data-aos="fade-up">Ayam betutu kampung 1/2</strong> <br/>Rp. 75.000</p>
+</div>
+<div class="item">
+<img alt="Panggang Ayam kampung 1/2" src="https://i.imgur.com/G3GxBK5.jpeg"/>
+<p data-aos="fade-up">NO. 37<br/><strong data-aos="fade-up">Panggang Ayam kampung 1/2</strong> <br/>Rp.75.000</p>
+</div>
+<div class="item">
+<img alt="Ayam negeri ingkung bakar" src="https://i.imgur.com/3ePPX2g.jpeg"/>
+<p data-aos="fade-up">NO. 38<br/><strong data-aos="fade-up">Ayam negeri ingkung bakar</strong><br/>Rp. 90.000</p>
+</div>
+<div class="item">
+<img alt="Ayam bakar kampung" src="https://i.imgur.com/4GZ3bu1.jpeg"/>
+<p data-aos="fade-up">NO. 39<br/><strong data-aos="fade-up">Ayam bakar kampung</strong><br/>Harga Rp. 150.000</p>
+</div>
+<section id="Sedepan">
+<div class="item">
+<h2 data-aos="fade-up">Sedepan</h2>
+<div class="Sedepan"></div></div></section>
+<div class="item">
+<img alt="Sedepan ikan nila 5 porsi" src="https://i.imgur.com/cr6WVfx.jpeg"/>
+<p data-aos="fade-up">NO. 40<br/><strong data-aos="fade-up">Sedepan ikan nila 5 porsi</strong> <br/>Rp. 120.000</p>
+</div>
+<div class="item">
+<img alt="Sedepan tampah 10 porsi" src="https://i.imgur.com/SCBsHIq.jpeg"/>
+<p data-aos="fade-up">NO. 41<br/><strong data-aos="fade-up">Sedepan tampah 10 porsi</strong> <br/>Rp. 195.000</p>
+</div>
+<section id="Tumpeng">
+<div class="item">
+<h2 data-aos="fade-up">Tumpeng</h2>
+<div class="Tumpeng"></div></div></section>
+<div class="item">
+<img alt="Tumpeng Nasi kuning 10porsi" src="https://i.imgur.com/sGEJdKg.jpeg"/>
+<p data-aos="fade-up">NO. 42<br/><strong data-aos="fade-up">Tumpeng Nasi kuning 10 porsi</strong> <br/>Rp. 200.000</p>
+</div>
+<div class="item">
+<img alt="Tumpeng Nasi putih komplit 10porsi" src="https://i.imgur.com/iCWLRZy.jpeg"/>
+<p data-aos="fade-up">NO. 41<br/><strong data-aos="fade-up">Tumpeng Nasi putih komplit 10 porsi</strong> <br/>Rp. 275.000</p>
+</div>
+<div class="item">
+<img alt="Tumpeng Nasi kuning komplit 15 Porsi" src="https://i.imgur.com/82VQb87.jpeg"/>
+<p data-aos="fade-up">NO. 42<br/><strong data-aos="fade-up">Tumpeng Nasi kuning komplit 15 Porsi</strong> <br/>Rp. 300.000</p>
+</div>
+<section id="Prasmanan">
+<div class="item">
+<h2 data-aos="fade-up">Prasmanan</h2>
+<div class="Prasmanan"></div></div></section>
+<div class="item">
+<img alt="Paket prasmanan custom aneka lauk" src="https://i.imgur.com/0jVPEkY.jpeg"/>
+<p data-aos="fade-up">NO. 43<br/><strong data-aos="fade-up">Paket prasmanan custom aneka lauk</strong> <br/> Harga Mulai dari Rp. 70.000</p>
+</div>
+<div class="item">
+<img alt="Prasmanan Resepsi" src="https://i.imgur.com/xUTZGBb.jpeg"/>
+<p data-aos="fade-up">No. 44<strong data-aos="fade-up"> <br/>Prasmanan Resepsi </strong> <br/>Rp. 47.000 / porsi</p>
+</div>
 
-    <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
+<section class="contact" id="kontak">
+<h2>Pesan Sekarang</h2>
+<p>Hubungi kami di nomor berikut untuk pemesanan atau informasi lebih lanjut:</p>
+<p><strong>0858-1380-0375</strong></p>
+<a class="cta-button" href="tel:085813800375">Telepon Sekarang</a>
+<a href="https://wa.me/6285813800375" target="_blank">Chat via WhatsApp</a>
+</section>
+</main>
+<footer>
+<p>© 2025 Pawon Arjuna Catering. All rights reserved.</p>
+</footer>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('header img').classList.add('logo-animated');
+    });
 
-    <main>
-        <section id="tentang">
-            <h2>Tentang Kami</h2>
-            <p style="text-align: center;">Pawon Arjuna adalah jasa catering yang berlokasi di Limbangan Karanganyar, Pekalongan. Kami siap melayani berbagai macam acara, seperti pernikahan, syukuran, hajatan, rapat, dan lainnya. Kualitas rasa dan pelayanan adalah prioritas kami.</p>
-        </section>
+    const items = document.querySelectorAll('.item');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
 
-        <section id="galeri">
-            <h2>Galeri Hidangan</h2>
-            <div class="gallery">
-                
-                <div class="item">
-                    <img src="https://i.imgur.com/wwDsj4j.jpeg" alt="Nasi Kotak Ayam Goreng">
-                    <p><strong>Nasi Kotak Ayam Goreng</strong><br>Harga Mulai dari <br>Rp. 20.000</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/NkXDqTj.png" alt="Nasi Opor Ayam">
-                    <p><strong>Nasi Opor Ayam</strong><br>Harga mulai dari<br>Rp. 25.000</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/9cfZpoL.jpeg" alt="TNasi Ikan NIla">
-                    <p><strong>Nasi Ikan Nila</strong><br>Harga mulai dari<br>Rp. 20.000</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/6OEOUx9.jpeg" alt="Nasi Ikan Lele">
-                    <p><strong>Nasi Ikan Lele </strong> <br>Harga mulai dari  <br>Rp.20.000</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/zJxelkN.jpeg" alt="Nasi Ikan Gurame">
-                    <p><strong>Nasi Ikan Gurame </strong> <br>Harga mulai dari <br>Rp. 45.000/pax</p>
-                </div>
-
-		<div class="item">
-                    <img src="https://i.imgur.com/xUTZGBb.jpeg" alt="Prasmanan Resepsi">
-                    <p><strong>Prasmanan Resepsi </strong> <br> harga mulai dari <br>Rp. 40.000/pax</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/SmvPn1O.jpeg" alt="Snack Rapat">
-                    <p><strong>Snack Rapat </strong> <br>Harga mulai dari <br> Rp. 10.000/pax</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/u0US7UL.jpeg" alt="Nasi Bakar">
-                    <p><strong>Nasi Bakar</strong><br>Rp. 12.000</p>
-                </div>
-    
-                <div class="item">
-                    <img src="https://i.imgur.com/eYxEkaC.jpeg" alt="Tumpeng Besar">
-                    <p><strong>Tumpeng Besar</strong><br>Rp250.000</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="kontak" class="contact">
-            <h2>Pesan Sekarang</h2>
-            <p>Hubungi kami di nomor berikut untuk pemesanan atau informasi lebih lanjut:</p>
-            <p><strong>0858-1380-0375</p>
-            <a href="tel:085813800375" class="cta-button">Telepon Sekarang</a>
-            <a href="https://wa.me/6285813800375" target="_blank">Chat via WhatsApp</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Pawon Arjuna Catering. All rights reserved.</p>
-    </footer>
-</body>
+    items.forEach(item => {
+        observer.observe(item);
+    });
+</script>
+<script>AOS.init();</script></body>
 </html>
